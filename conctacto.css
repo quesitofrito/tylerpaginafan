@@ -1,0 +1,212 @@
+
+/* styles.css */
+
+* {
+    list-style: none;
+    box-sizing: border-box;
+    color: #492B1A;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dela Gothic One', sans-serif;
+    background-image: url('Imagenes/pollitocol.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+}
+
+#Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: none;
+    background-color: #FFF6E4;
+}
+
+.logo {
+    color: #492B1A;
+    display: flex;
+    align-items: center; 
+}
+
+.logo a {
+    text-decoration: none;
+    color: #492B1A;
+    font-size: 25px;
+    font-family: 'Dela Gothic One', sans-serif;
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (min-width: 1020px) {
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* IMAGEN */
+.callme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+
+#callme-image {
+    transition: transform 0.5s;
+}
+
+.rotating {
+    transform: rotate(360deg);
+}
+
+.rotating {
+    transform: rotate(360deg);
+}
+
+/* IMAGEN RESPONSIVE */
+@media screen and (max-width: 780px) {
+    .callme {
+        height: 50vh;
+    }
+
+    #callme-image {
+        max-height: 50%;
+    }
+}
+
+.regreso a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    background-color: #DC9593;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    align-items: center;
+}
+
+a:hover {
+    background-color: #F9C1BF;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1.4em;
+}
+
+.form-control{
+    width: 100%;
+    max-width:964px ;
+    height: 47px;
+    border-radius: 12px;
+    opacity: 0.7;
+    background: #FFF6E4;
+    display: flex;
+    margin: 0 auto;
+}
+
+.formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formmensaje{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 964px;
+    height: 123px;
+    border-radius: 12px;
+    opacity: 0.7;
+    background: #FFF6E4;
+    display: flex;
+}
+
+
+.mensajebarra{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 964px;
+    height: 145px;
+    border-radius: 12px;
+    opacity: 0.7;
+    background: #FFF6E4;
+    display: flex;
+}
+
+.form-label{
+    font-family: dela gothic one;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 964px;
+}
+.button{
+border-radius: 20px;
+font-family: dela gothic one;
+opacity: 0.7;
+background: #FFF6E4;
+}
+
+/* ULTIMA PARTE FOOTER */
+
+.Redes {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: #FFF6E4;
+    padding: 20px;
+}
+
+.Redes article {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.Footertext {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Redes article a {
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+/* RESPONSIVE FOOTER */
+@media screen and (max-width: 768px) {
+    .Redes {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .Redes article {
+        margin: 10px 0;
+    }
+}
+
